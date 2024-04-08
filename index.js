@@ -13,6 +13,9 @@ for (const name in managerList) {
 
 app.use("/", router);
 
+app.use(express.static('public'))
+
+
 app.listen(1000, () => {
   console.log("ok");
 });
